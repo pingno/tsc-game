@@ -40,6 +40,25 @@ const getHello = (s: string, ):string => {
     return ""
 }
 
+// const heros = ["thor", "spiderman", "ironman"]
+const heros = [1, 2, 3]
 
+
+//typescript is aware of context and will understand the context of the datatype
+heros.map(hero => {
+    return `hero is ${hero}`
+})
+
+
+function consoleError(errmsg: string): void{
+    console.log(errmsg)
+}
+
+
+//void / never 
+//never will never return a value
+function handleError(errmsg: string): void{
+    console.log()
+}
 
 export {}
