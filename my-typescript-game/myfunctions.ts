@@ -24,4 +24,22 @@ singUpUser("peang", "sheesh@gmail.com", true)
 loginUser("h", "h@H.com")
 
 
+
+// function getValue(myVal: number){
+//     if (myVal > 5) {
+//         return true
+//     }
+
+//     return "200 OK"
+// }
+
+
+//assigning datatype for return value of an arrow function
+const getHello = (s: string, ):string => {
+
+    return ""
+}
+
+
+
 export {}
