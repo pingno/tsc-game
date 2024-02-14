@@ -74,3 +74,24 @@ const vehicle = {
 
 vehicle.type = "Ford"; //no error
 // vehicle.type = 2; //Error: Type 'number is not assignable to type 'string'
+
+
+//Optional Properties
+
+//when defining an object with inferred properties, they must be initialized with all the given properties
+
+//if you want to initialize an object with optional properties then use ?
+
+const theCar: { type: string, mileage?: number } = {
+    type: "Toyota"
+}
+theCar.mileage = 2000;
+
+
+//Index Signatures
+// Can be used for objects without a defined list of properties
+
+const nameAgeMap: { [index: string]: number } = {};
+nameAgeMap.Jack = 25; //no error
+// nameAgeMap.Mark = "Fifty";  //Error: Type 'string' is not assignable to type 'number'
+
