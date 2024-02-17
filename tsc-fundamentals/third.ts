@@ -111,3 +111,17 @@ const coloredSquare: ColoredSquare = {
     width: 20,
     color: "red"
 }
+
+
+//TS Union Types
+
+//Union Types are used when a value can be more than a single type
+//Such as when a property would be string or number
+
+//Using the | we are saying our parameter is a string or number:
+
+function printStatusCode(code: string | number) {
+    console.log(`My status code is ${code}.`)
+  }
+  printStatusCode(404);
+  printStatusCode('404');
