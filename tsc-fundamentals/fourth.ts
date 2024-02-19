@@ -59,3 +59,26 @@ function divide({ dividend, divisor}: { dividend: number, divisor: number }) {
 }
 
 console.log(divide({dividend: 10, divisor: 2}))
+
+
+//Rest Parameters
+// - can be typed like normal parameters, but the type must be an array as rest parameters are always arrays.
+
+function add1(a: number, b: number, ...rest: number[]){
+    return a + b + rest.reduce((p, c) => p + c, 0)
+}
+
+console.log(add1(10, 5, 2, 5, 2, 5, 2))
+
+
+
+//Type Alias
+// Function types can be specified separately from functions with type aliases
+// these types are written similarly to arrow functions
+
+type Negate = (value: number) => number; 
+//this function, the parameter 'value' automatically gets assigned the type 'number' from the type 'Negate'
+
+const negateFunction: Negate = (value) => value * -1
+
+console.log(negateFunction(10)) // -10
