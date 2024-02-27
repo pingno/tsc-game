@@ -83,3 +83,23 @@ The config noUncheckedIndexedAccess can be used to change this behavior.
 
 let array: number[] = [1, 2, 3];
 let value2 = array[0]; // with 'noUncheckedIndexedAccess' this has the type 'number | undefined' 
+
+
+// TS Definitely Types
+// NPM packages in the broad JS exocosystem doesn't always have types available
+// Sometimes the projects are no longer maintained, and other times they aren't interested in, agree with, or have time to use TS
+
+
+/* 
+
+Using non-typed NPM packages in TypeScript
+
+- will not be safe due to lack fo types
+
+to help TS developers use such packages, there is a community maintained project called Definitely Typed
+
+Definitely Typed is a project that provides a central repo of TS defininitions for NPM packages which do not have types
+
+
+
+*/
