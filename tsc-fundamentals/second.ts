@@ -4,6 +4,11 @@ const names: string[] = []
 names.push("Dylan") // no error
 //names.push(3); //Error: Argument of type 'number' is not assignable to parameter of type 'string'
 
+const games: string[] = ["diablo", "league of legends", "pokemon", "dynasty"]
+console.log(games)
+
+// const random = ["peang", 33, true]
+
 //keyword: Readonly
 // - can prevent arrays from being changed
 

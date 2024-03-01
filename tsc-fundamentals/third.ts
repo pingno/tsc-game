@@ -6,6 +6,13 @@
 //Numeric Enums - Default
 //By default, enums will initialize the first value to 0 and add 1 to each additional value:
 
+enum Elements {
+    Fire, Wind, Water, Earth
+}
+
+let FireNation = Elements.Fire
+
+
 enum CardinalDirections {
     North,
     South,
@@ -19,6 +26,10 @@ console.log(currentDirection);
 //throws error as 'North' is not a valid enum
 // currentDirection = 'North'; // Error: "North" is not assignable to type 'CardinalDirections'
 
+
+enum Elements1 { Fire = 1, Wind = 2, Water = 3, Earth = 4 }
+console.log(Elements.Fire)
+console.log(Elements.Earth)
 
 enum CardinalDirections1 {
     North = 1,
@@ -74,7 +85,7 @@ type Car = {
 const carYear: CarYear = 2001
 const carType: CarType = "Toyota"
 const carModel: CarModel = "Corolla"
-const car: Car = {
+const car1: Car = {
     year: carYear,
     type: carType,
     model: carModel
