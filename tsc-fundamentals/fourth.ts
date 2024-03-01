@@ -40,6 +40,9 @@ function add(a: number, b: number, c?: number){
 
 console.log(add(3,2))
 
+function firstLastName(first: string, last: string){
+    return first + last
+}
 
 //Default Parameters
 // - for parameters with default values, the default value goes after the type annotation:

@@ -124,6 +124,11 @@ const coloredSquare: ColoredSquare = {
 }
 
 
+// interface Circle {
+//     radius: number,
+//     pie: number
+// }
+
 //TS Union Types
 
 //Union Types are used when a value can be more than a single type
